@@ -1,0 +1,1 @@
+This file contains the images that are analyzed in the Hyperspectral Change Detection Project. The images are hyperspectral images (HDR), which provide detailed spectral information for each pixel.
