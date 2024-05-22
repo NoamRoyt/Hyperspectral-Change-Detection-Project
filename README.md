@@ -12,8 +12,11 @@ Chronochrome leverages spectral and temporal correlations to identify anomalies,
 Steps:
 
 -Normalization: Adjust data to have a mean of zero.
+
 -Covariance Matrix Calculation: Understand variability within and between images.
+
 -Temporal Prediction: Predict spectral characteristics of one image based on the other.
+
 -Difference Analysis: Compare predicted and actual data to detect anomalies.
 
 ## Covariance Equalization
@@ -22,19 +25,29 @@ Covariance Equalization normalizes the covariance of image data to improve chang
 Steps:
 
 -Normalization: Adjust data to have a mean of zero.
+
 -Covariance Matrix Calculation: Calculate covariance matrices for the images.
+
 -Difference Calculation: Define difference cubes and covariance matrices to highlight changes.
+
 -Error Analysis: Measure the difference between predicted and actual data to detect anomalies.
+
 
 # Implementation
 The project uses Python and NumPy for numerical computations:
 
 -Data Loading: Load hyperspectral images from the RIT dataset.
+
 -Normalization: Normalize the data.
+
 -Covariance Matrix Calculation: Calculate covariance matrices.
+
 -Target Injection: Simulate changes by injecting a target into the second image.
+
 -Anomaly Detection: Detect anomalies using the calculated difference and its covariance matrix.
+
 -ROC Analysis: Build ROC curves to evaluate detection performance.
+
 
 # Expanded Research
 We applied a new normalization method that normalizes each pixel by subtracting the average value of its neighbors, enhancing local contrast and improving anomaly detection robustness.
